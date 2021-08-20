@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>霖傻狗专属系统</title>
+		<link rel="stylesheet" href="./css/login.css">
+		<style type="text/css">
+			.model {
+				width: 50%;
+				height: 20%;
+				box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+				border-radius: 8px;
+				padding: 1em;
+				padding-top: 0;
+				position: fixed;
+				z-index: 100;
+				background-color: #fff;
+				display: none;
+			}
+
+			.model-header {
+				border-bottom: 1px solid #eaeaea;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+			}
+
+			.close {
+				position: absolute;
+				top: 0;
+				right: 15px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				display: block;
+				color: #666;
+				cursor: pointer;
+			}
+
+			.close:hover {
+				color: #A30D10;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loginmain">
+			<div class="title-text">现在时间</div>
+			<div class="login-title">
+				<span>欢迎登录笨蛋系统</span>
+			</div>
+
+			<div class="login-con">
+				<div class="login-user">
+					<input id="usernem" class="usernem" type="text" name="usernem" placeholder="账号" autocomplete="off"
+						value="">
+				</div>
+				<div class="login-pwd">
+					<input id="pwd" class="pwd" type="password" name="pwd" placeholder="密码" autocomplete="off" value="">
+				</div>
+				<div class="login-btn">
+					<input onclick="checkLogin()" type="button" value="登录">
+				</div>
+			</div>
+		</div>
+		<div class="model">
+			<div class="model-header">
+				<h3>弹出标题</h3>
+				<span class="close">×</span>
+			</div>
+			<div class="model-body">弹出内容 </div>
+			<div class="model-footer">
+				<button>确定</button>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/ban.js"></script>
+<script src="./js/login.js"></script>
